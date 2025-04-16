@@ -22,7 +22,7 @@
     },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\portable_mode.txt\")) { New-Item \"$dir\\portable_mode.txt\" | Out-Null }",
-        "Copy-Item \"$(appdir proxychains $global)\\current\\proxychains_hook_x64.dll\" \"$dir\\msimg32.dll\""
+        "Copy-Item \"$(appdir proxychains $global)\\current\\proxychains_hook_x64.dll\" \"$dir\\bin\\64bit\\msimg32.dll\""
     ],
     "persist": [
         "config",
